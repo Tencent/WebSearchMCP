@@ -1,0 +1,6 @@
+.idea/
+.codebuddy/
+*.DS_Store
+.codecc/
+.vscode
+prosearchmcp
