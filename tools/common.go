@@ -118,8 +118,8 @@ func DoFailResponse(ctx context.Context, req mcp.CallToolRequest, creq *prosearc
 		Content: []mcp.Content{
 			mcp.TextContent{
 				Type: "text",
-				Text: fmt.Sprintf("Error: tool name=%s, input=%s, sid=%s, skey=%s, fail %s", req.Params.Name,
-					string(jsonData), creq.SecretID, creq.SecretKey, err),
+				Text: fmt.Sprintf("Error: tool name=%s, input=%s, fail upstream request", req.Params.Name,
+					string(jsonData)),
 			},
 		},
 		IsError: true,
